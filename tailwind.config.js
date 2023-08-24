@@ -42,6 +42,9 @@ module.exports = {
           900: '#363409',
         }
       },
+      fontFamily: {
+        sans: ["'Montserrat', sans-serif"],
+      }
     },
   },
   plugins: [],
