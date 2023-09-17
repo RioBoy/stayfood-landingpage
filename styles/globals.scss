@@ -3,3 +3,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wp-image-hero {
+    img {
+        @apply w-full h-[500px] object-contain object-center;
+    }
+}
+
+.btn-style-primary {
+    @apply py-3 px-10 rounded-[50px] hover:opacity-80 transition duration-300;
+}
+
+.btn-order-now {
+    box-shadow: 0px 35px 40px 0px rgba(246, 201, 55, 0.30);
+}

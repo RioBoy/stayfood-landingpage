@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Button from './Button';
 
 const Header = () => {
   return (
@@ -33,7 +34,9 @@ const Header = () => {
 
           {/* Navbar Button Start */}
           <div className="w-auto">
-            <button className="text-base font-bold text-white bg-aragon-500 py-3 px-10 rounded-[50px] hover:opacity-80 transition duration-300">Login</button>
+            <Button extraclass="text-base font-bold text-white bg-aragon-500">
+              Login
+            </Button>
           </div>
           {/* Navbar Button End */}
         </div>
