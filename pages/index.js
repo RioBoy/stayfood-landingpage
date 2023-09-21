@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Link from "next/link";
 import Header from "@/components/Header";
 import Button from "@/components/Button";
 
@@ -42,17 +43,55 @@ export default function Home() {
         {/* Section Main Menu End */}
 
         {/* Section Footer Menu Start */}
-        <section className="my-[80px]">
-          <div className="flex items-center gap-x-9">
-            <div className="w-4/12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas consectetur accusamus voluptatem quia perspiciatis corrupti, quos eos assumenda velit. Ea nisi incidunt, consequatur quos architecto explicabo alias, labore repellendus veritatis sit enim unde cumque reprehenderit maiores deleniti vel libero laborum, temporibus expedita! Quae, nemo dignissimos laudantium aspernatur nesciunt ipsum facilis.
+        <section className="my-[80px] px-[30px]">
+          <div className="grid grid-rows-1 grid-cols-3 items-center gap-x-9">
+            {/* Sub Menu 1 Start */}
+            <div className="shadow-card-menu w-full min-h-full max-w-xs flex rounded-[20px] py-[18px] relative">
+              <img src="/images/contents/menu-1.png" alt="Rendang" className="image-submenu absolute bottom-[30px] -left-[30px]" />
+              <div className="w-5/12"></div>
+              <div className="w-4/12 flex flex-col">
+                <h5 className="text-base font-medium text-primary mb-2">Rendang</h5>
+                <p className="text-sm font-light text-primary mb-[18px]">$3.57</p>
+                <Link href="/" className="btn-order-submenu text-sm font-medium text-lemonade-500 mt-auto">Order Now</Link>
+              </div>
+              <div className="w-auto"></div>
+              <button className="icon-cart absolute -bottom-[20px] -right-[20px]">
+                <img src="/images/icons/icon-cart.svg" alt="Cart" className="w-full h-full object-cover object-center" />
+              </button>
             </div>
-            <div className="w-4/12">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facilis? Molestiae, in fugiat velit reiciendis quia eveniet porro, cumque quo cum harum facilis maxime laboriosam incidunt dolorem? Pariatur facilis ab tenetur quibusdam incidunt dignissimos impedit numquam ratione magni, alias quaerat, quia iste provident? Consectetur ipsum repellendus pariatur, sapiente veniam nostrum!
+            {/* Sub Menu 1 End */}
+
+            {/* Sub Menu 2 Start */}
+            <div className="shadow-card-menu w-full min-h-full max-w-xs flex rounded-[20px] py-[18px] relative">
+              <img src="/images/contents/menu-2.png" alt="Sate" className="image-submenu absolute bottom-[30px] -left-[30px]" />
+              <div className="w-5/12"></div>
+              <div className="w-4/12 flex flex-col">
+                <h5 className="text-base font-medium text-primary mb-2">Sate</h5>
+                <p className="text-sm font-light text-primary mb-[18px]">$3.57</p>
+                <Link href="/" className="btn-order-submenu text-sm font-medium text-lemonade-500 mt-auto">Order Now</Link>
+              </div>
+              <div className="w-auto"></div>
+              <button className="icon-cart absolute -bottom-[20px] -right-[20px]">
+                <img src="/images/icons/icon-cart.svg" alt="Cart" className="w-full h-full object-cover object-center" />
+              </button>
             </div>
-            <div className="w-4/12">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi ut nulla impedit quam reprehenderit voluptas quis, adipisci quidem nam quia ratione amet beatae praesentium odit exercitationem commodi labore! Dolores dolor architecto voluptate eius quas numquam magni maxime expedita iste natus omnis et nostrum iure, laborum repudiandae dolorem perferendis distinctio. Distinctio!
+            {/* Sub Menu 2 End */}
+
+            {/* Sub Menu 3 Start */}
+            <div className="shadow-card-menu w-full min-h-full max-w-xs flex rounded-[20px] py-[18px] relative">
+              <img src="/images/contents/menu-3.png" alt="Nasi Uduk" className="image-submenu absolute bottom-[30px] -left-[30px]" />
+              <div className="w-5/12"></div>
+              <div className="w-4/12 flex flex-col">
+                <h5 className="text-base font-medium text-primary mb-2">Nasi Uduk</h5>
+                <p className="text-sm font-light text-primary mb-[18px]">$3.57</p>
+                <Link href="/" className="btn-order-submenu text-sm font-medium text-lemonade-500 mt-auto">Order Now</Link>
+              </div>
+              <div className="w-auto"></div>
+              <button className="icon-cart absolute -bottom-[20px] -right-[20px]">
+                <img src="/images/icons/icon-cart.svg" alt="Cart" className="w-full h-full object-cover object-center" />
+              </button>
             </div>
+            {/* Sub Menu 3 End */}
           </div>
         </section>
         {/* Section Footer Menu End */}
