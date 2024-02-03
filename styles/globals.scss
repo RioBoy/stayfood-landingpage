@@ -4,9 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+    position: relative;
+}
+
 .wp-image-hero {
     img {
-        @apply w-full h-[500px] object-contain object-center;
+        @apply w-full h-[420px] xxl:h-[500px] object-contain object-center;
     }
 }
 

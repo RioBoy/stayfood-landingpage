@@ -44,7 +44,11 @@ module.exports = {
       },
       fontFamily: {
         sans: ["'Montserrat', sans-serif"],
-      }
+      },
+      screens: {
+        xl: { max: '1440px' },
+        xxl: { min: '1441px' },
+      },
     },
   },
   plugins: [],

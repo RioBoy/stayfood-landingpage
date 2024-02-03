@@ -5,7 +5,7 @@ import Button from './Button';
 const Header = () => {
   return (
     <header>
-      <div className="container py-12">
+      <div className="container py-8 xxl:py-12">
         <div className="flex items-center">
           {/* Navbar Brand Start */}
           <div className="w-auto">
